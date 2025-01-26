@@ -2,3 +2,5 @@ fastapi
 numpy
 pandas
 pillow
+uvicorn
+python-multipart
