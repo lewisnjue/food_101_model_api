@@ -1,6 +1,8 @@
-#/bin/bash
-python3 -m venv env
-./env/bin/pip install -r requirements.txt
+#!/bin/bash
+set -e  # Exit immediately if any command fails
+pip3 install --upgrade pip
 
-./env/bin/pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+pip3 install -r requirements.txt
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 
